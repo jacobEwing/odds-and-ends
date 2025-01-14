@@ -85,6 +85,8 @@ a cyclic manner.
 void gfx_draw_texture(SDL_Surface *target, int *destpoint, int *sourcepoint, int numpoints, SDL_Surface *source){
 	unsigned char done = 0;
 	int minpoint, current_pointnum[2], n;
+
+	/* The t_ and s_ prefixes indicate "target" and "source" */
 	int t_deltax[2], t_deltay[2];
 	int t_sgndeltax[2], t_sgndeltay[2];
 	int t_deltaxabs[2], t_deltayabs[2], t_deltax_tally[2];
